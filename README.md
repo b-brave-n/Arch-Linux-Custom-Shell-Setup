@@ -3,10 +3,9 @@ Step-by-step guide to installing and configuring the Fish shell on a fresh Arch 
 
 **Table of Contents** <br>
 	•	Prerequisites <br>
-  •	Arch Linux Setup <br>
+  	•	Arch Linux Setup <br>
 	•	Arch Linux Installation <br>
 	•	Common Post-Install Customization <br>
-	•	Reverting to a Different Shell <br>
 	•	References<br>
 
 
@@ -78,13 +77,12 @@ Click "Finish"
 18. Select "ext4 Ext4" in Filesystem and home
     <br>
           <img width="315" height="138" alt="image" src="https://github.com/user-attachments/assets/21848b03-4f2f-4694-a7c8-e9beda4e841b" /><br><br>
-19. Confirm the file system you want to use.
-20. Allocate your disk space for _/home_ directory
-21. Confirm it!
+19. Confirm the file system you want to use.<br>
+20. Allocate your disk space for _/home_ directory <br>
+21. Confirm it! <br>
 22. Authorize the deletion of ALL DATA in on _/dev/sda_
     <br><br>
-          <img width="315" height="138" alt="image" src="https://github.com/user-attachments/assets/59efa294-2ae6-4fe5-9147-34c24557af97" />
-<br><br><br>
+          
 
 23. Select "Install Packages"
     <br>
@@ -98,7 +96,9 @@ Click "Finish"
 26. Select a "New Root Password" and confirm it><br>
 27. Select "NANO" for Text editor so it will be easier for us to learn><br>
 28. Select "BUSYBOX"><br>
-29. Set Default Shell to "Standard Base Shell"><br>
+29. Set Default Shell to "ZSH More features for experts"><br>
+<img width="404" height="143" alt="Screenshot 2025-11-03 at 2 36 40 PM" src="https://github.com/user-attachments/assets/e7f77c0e-f8dc-45a7-9687-7d91f183c727" />
+<br><br>
 30. Select "Create a User Account" and create username and "Enable user as Admin and Part of wheel group."><br>
 <br><img width="207" height="111" alt="image" src="https://github.com/user-attachments/assets/96ae401b-d205-4c44-97c8-49f0ad46398b" /><br><br>
 31. Select password for your user><br>
@@ -119,4 +119,32 @@ Click "Finish"
 42. Without changing any line, exit the file (Ctrl+X) <br>
 43. Select "Reboot System" and log in to your account again <br>
 <img width="208" height="121" alt="Screenshot 2025-11-03 at 1 17 25 AM" src="https://github.com/user-attachments/assets/9178ad6d-f149-4fa8-a6cf-8b6cee787e41" /> <br> <br>
-44. 
+
+
+
+
+
+
+<br><br>
+**Common Post-Install Customization**
+<br>
+After restart open your VM and sign in as a root user and folllow steps below:
+
+1. Check your shell type with: _echo $SHELL_ <br>
+   Output should be _/usr/bin/zsh_ <br>
+
+2. Install **ssh** using the command: _pacman -Sy openssh_ <br>
+<img width="1118" height="532" alt="Screenshot 2025-11-03 at 2 52 26 PM" src="https://github.com/user-attachments/assets/4c4b64d5-5d8b-4fec-8804-921ed469f107" />
+<br><br>
+
+3. Start SSH service right now using command: _systemctl start sshd_ and hit enter <br>
+
+4. Enable it to start automatically on boot using command: _systemctl enable sshd_ and hit enter <br>
+<img width="821" height="27" alt="Screenshot 2025-11-03 at 3 05 08 PM" src="https://github.com/user-attachments/assets/9ed95dc1-6340-4064-bcfc-c65a87a05b07" />
+<br><br>
+
+5. Check SSH Is Running using command: _systemctl status sshd_ <br>
+<img width="547" height="17" alt="image" src="https://github.com/user-attachments/assets/a780d276-8fc4-4f38-a3c3-7acae5349065" /> <br><br>
+
+
+
