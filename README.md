@@ -146,5 +146,33 @@ After restart open your VM and sign in as a root user and folllow steps below:
 5. Check SSH Is Running using command: _systemctl status sshd_ <br>
 <img width="547" height="17" alt="image" src="https://github.com/user-attachments/assets/a780d276-8fc4-4f38-a3c3-7acae5349065" /> <br><br>
 
+6. Enable color output for key commands: <br>
+   In ~/.zshrc  file, add these aliases to ensure color output for common CLI tools:
+   _alias ls='ls --color=auto' <br>
+	alias grep='grep --color=auto' <br>
+	alias diff='diff --color=auto'
+	PROMPT='%F{blue}%n@%m%f:%F{red}%~%f%# '_ <br>
+<img width="291" height="77" alt="Screenshot 2025-11-03 at 3 49 53 PM" src="https://github.com/user-attachments/assets/fc5315c0-d87c-4c23-99eb-93b2f1e10511" />
+<br> <br>
+
+7. Activate and verify color support: _source ~/.zshrc_ <br>
+
+8. Update System Packages: _pacman -Syu_ <br>
+
+9. Install a Desktop Environment to install GNOME: _pacman -S gnome_ <br>
+
+10. Install a Display Manager for Gnome: _pacman -S gdm_ <br>
+
+11. Enable and Start the Display Manager: _systemctl enable --now gdm.service_ <br>
+<br><br><br><br><br>
+
+All these steps will boot the GNOME. If you are still in the kernel, type in _reboot_ <br> <br>
+
+After reboot, your system will go directly to the GNOME login screen.   <br>
+<img width="1101" height="683" alt="Screenshot 2025-11-03 at 5 51 11 PM" src="https://github.com/user-attachments/assets/ae575693-749a-4b5e-bb8d-98f4b1ec3656" />
+<br><br>
 
 
+
+**ANNNNNNNNNNNDDDDDD VIOLA**
+<img width="1098" height="680" alt="image" src="https://github.com/user-attachments/assets/55fbb62c-0751-4f64-872e-073915507342" />
