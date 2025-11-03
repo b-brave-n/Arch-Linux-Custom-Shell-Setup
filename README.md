@@ -58,7 +58,7 @@ Click "Finish"
 8. Select "Launch Archboot Setup"
    <br>
           <img width="278" height="122" alt="image" src="https://github.com/user-attachments/assets/c01621ac-a37c-4509-8997-1f8fed91413e" /><br><br>
-**9. Select "Preparing Storage Device"**
+9. Select "Preparing Storage Device"
 10. Select "Quick Setup"
 11. Select "/dev/sda {your allocated memory}"
 12. Select "PARTUUID=<partuuid>"
