@@ -117,4 +117,6 @@ Click "Finish"
 40. Select "GRUB UEFI" <br>
 41. Select "OK" to continue <br>
 42. Without changing any line, exit the file (Ctrl+X) <br>
-
+43. Select "Reboot System" and log in to your account again <br>
+<img width="208" height="121" alt="Screenshot 2025-11-03 at 1 17 25 AM" src="https://github.com/user-attachments/assets/9178ad6d-f149-4fa8-a6cf-8b6cee787e41" /> <br> <br>
+44. 
