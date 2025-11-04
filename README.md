@@ -175,4 +175,19 @@ After reboot, your system will go directly to the GNOME login screen.   <br>
 
 
 **ANNNNNNNNNNNDDDDDD VIOLA**
-<img width="1098" height="680" alt="image" src="https://github.com/user-attachments/assets/55fbb62c-0751-4f64-872e-073915507342" />
+<img width="1098" height="680" alt="image" src="https://github.com/user-attachments/assets/55fbb62c-0751-4f64-872e-073915507342" /> <br><br><br>
+
+12. Edit ~/.zshrc  and add or fix alias lines: <br>
+_alias la='ls -A --color=auto' <br>
+alias l='ls -CF --color=auto'_ <br>
+
+13. Save and reload shell config: <br>
+    _source ~/.zshrc_ <br>
+
+14. Test your aliases: <br>
+_ll <br>
+la_ <br>
+<img width="958" height="602" alt="image" src="https://github.com/user-attachments/assets/f4547fba-5749-465e-9373-0d5b73f37ff0" />
+
+
+
